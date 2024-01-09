@@ -1,0 +1,33 @@
+package com.itsp.repo;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Repository;
+
+import com.itsp.bean.Passenger;
+import com.itsp.bean.Tickete;
+
+@Repository
+public class IrtctcRepoImpl implements IrctcRepo {
+
+	Map<Integer,Tickete> db = new HashMap<>();
+	@Override
+	public String bookTickete(Passenger p) {
+		Object obj =	db.put("ps", p);
+		if(obj!=null) {
+			return "ticket Booked";
+		}else {
+			return "ticket Booking Failed";
+		}
+		
+	}
+
+	@Override
+	public List<Tickete> showTickets() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

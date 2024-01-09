@@ -1,0 +1,20 @@
+package com.itsp.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.itsp.model.Passenger;
+import com.itsp.model.Tickete;
+
+@Service
+public class MakeMyTripService {
+	
+	RestTemplate rs  = new RestTemplate();		
+	
+	public Tickete bookingTicket(Passenger p) {
+		String uri = "http://localhost:8080/book";
+	    return	rs.postForEntity(uri, p, Tickete.class).getBody();
+	}
+	
+
+}

@@ -1,0 +1,5 @@
+package com.itsp.service;
+
+public interface TicketBookingService {
+
+}

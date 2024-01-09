@@ -1,0 +1,5 @@
+package com.itsp.bean;
+
+public class Passenger {
+
+}

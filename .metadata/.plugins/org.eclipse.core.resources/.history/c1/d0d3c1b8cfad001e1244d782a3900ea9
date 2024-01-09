@@ -1,0 +1,10 @@
+package com.itsp.repo;
+
+import java.util.List;
+
+public interface IrctcRepo {
+	
+	public String bookTickete();
+	public List<String> showTickets();
+
+}

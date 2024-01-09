@@ -1,0 +1,22 @@
+package com.itsp.repo;
+
+import java.util.List;
+
+import com.itsp.bean.Passenger;
+import com.itsp.bean.Tickete;
+
+public class IrtctcRepoImpl implements IrctcRepo {
+
+	@Override
+	public String bookTickete(Passenger p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Tickete> showTickets() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
