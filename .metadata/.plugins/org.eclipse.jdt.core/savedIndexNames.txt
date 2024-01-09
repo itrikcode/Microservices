@@ -34,7 +34,6 @@ INDEX VERSION 1.134+D:\personal\my-apps\Microservices\.metadata\.plugins\org.ecl
 3252922329.index
 2467973297.index
 1826250823.index
-2018320375.index
 3709977933.index
 2476710493.index
 3339595314.index
