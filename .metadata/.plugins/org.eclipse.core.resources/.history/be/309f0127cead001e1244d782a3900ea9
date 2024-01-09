@@ -1,5 +1,0 @@
-package com.itsp.repo;
-
-public interface IrctcRepo {
-
-}
