@@ -6,6 +6,7 @@ plugins {
 
 group = 'com.itsp'
 version = '0.0.1-SNAPSHOT'
+archivesBaseName = 'irctc-provider'
 
 java {
 	sourceCompatibility = '17'

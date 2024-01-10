@@ -15,12 +15,12 @@ public class TripService {
 	RestTemplate rs = new RestTemplate();
 
 	public Tickete bookingTicket(Passenger p) {
-		String uri = "http://localhost:8080/book";
+		String uri = "http://54.208.197.242:8080/book";
 		return rs.postForEntity(uri, p, Tickete.class).getBody();
 	}
 
 	public List<Tickete> getAllTicket() {
-		String uri = "http://localhost:8080/ticket/all";
+		String uri = "http://54.208.197.242:8080/ticket/all";
 		Tickete[] body = rs.getForEntity(uri, Tickete[].class).getBody();
 		List<Tickete> ticketes = Arrays.asList(body);
 		return ticketes;
