@@ -10,6 +10,7 @@ public class ItrctcProviderAppApplication {
 		System.out.println("hello");
 		System.out.println("Hi");
 		System.out.println("ItrctcProviderAppApplication.main()");
+		System.setProperty("org.apache.tomcat.util.buf.UDecoder.ALLOW_ENCODED_SLASH", "true");
 		SpringApplication.run(ItrctcProviderAppApplication.class, args);
 	}
 
